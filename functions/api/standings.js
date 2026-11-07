@@ -1,3 +1,5 @@
+import { ensureDatabase } from './_init_sql.js';
+
 export async function onRequestGet(context) {
     const { env } = context;
 
@@ -9,6 +11,7 @@ export async function onRequestGet(context) {
     }
 
     try {
+        await ensureDatabase(env.DB);
         const query = `
             SELECT 
                 p.id, 

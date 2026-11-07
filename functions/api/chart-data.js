@@ -1,3 +1,5 @@
+import { ensureDatabase } from './_init_sql.js';
+
 export async function onRequestGet(context) {
     const { env } = context;
 
@@ -9,6 +11,8 @@ export async function onRequestGet(context) {
     }
 
     try {
+        await ensureDatabase(env.DB);
+
         // Get all completed sessions ordered chronologically
         const sessionsQuery = `
             SELECT id, country, round_name, session_date 
@@ -70,7 +74,6 @@ export async function onRequestGet(context) {
             };
         });
 
-        // Sort series by highest final points
         series.sort((a, b) => {
             const lastA = a.data.length ? a.data[a.data.length - 1] : 0;
             const lastB = b.data.length ? b.data[b.data.length - 1] : 0;

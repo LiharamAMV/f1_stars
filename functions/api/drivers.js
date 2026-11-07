@@ -1,3 +1,5 @@
+import { ensureDatabase } from './_init_sql.js';
+
 export async function onRequestGet(context) {
     const { env } = context;
 
@@ -9,6 +11,7 @@ export async function onRequestGet(context) {
     }
 
     try {
+        await ensureDatabase(env.DB);
         const { results } = await env.DB.prepare("SELECT * FROM drivers ORDER BY full_name ASC").all();
         return new Response(JSON.stringify({ success: true, data: results }), {
             headers: { "Content-Type": "application/json" }

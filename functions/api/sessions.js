@@ -1,3 +1,5 @@
+import { ensureDatabase } from './_init_sql.js';
+
 export async function onRequestGet(context) {
     const { env } = context;
 
@@ -9,6 +11,8 @@ export async function onRequestGet(context) {
     }
 
     try {
+        await ensureDatabase(env.DB);
+
         // Fetch participants
         const { results: participants } = await env.DB.prepare("SELECT * FROM participants ORDER BY nick ASC").all();
 
