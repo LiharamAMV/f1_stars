@@ -1,0 +1,92 @@
+/* ========================================== */
+/* assets/css/admin.css */
+/* ========================================== */
+
+.f1-stars-admin {
+    max-width: 1200px;
+}
+
+.f1-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.f1-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.f1-card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #e10600;
+}
+
+.f1-card button {
+    margin-top: 10px;
+}
+
+.f1-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.f1-card ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.f1-card ul li:last-child {
+    border-bottom: none;
+}
+
+#load-races-result,
+#load-results-result {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#load-races-result.success,
+#load-results-result.success {
+    background: #d5f5e3;
+    border: 1px solid #27ae60;
+    color: #1e7e34;
+    display: block;
+}
+
+#load-races-result.error,
+#load-results-result.error {
+    background: #fadbd8;
+    border: 1px solid #e74c3c;
+    color: #c0392b;
+    display: block;
+}
+
+.f1-status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.f1-status.completed {
+    background: #d5f5e3;
+    color: #27ae60;
+}
+
+.f1-status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.f1-status.upcoming {
+    background: #d1ecf1;
+    color: #0c5460;
+}
