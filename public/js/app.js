@@ -17,11 +17,15 @@ const F1App = (function() {
         }
 
         // Highlight current nav item
-        const path = window.location.pathname;
+        const path = window.location.pathname.replace(/\/index\.html$/, '/');
         document.querySelectorAll('.site-nav a').forEach(link => {
             const href = link.getAttribute('href');
-            if (href === path || (path === '/' && href === 'index.html') || path.endsWith(href)) {
+            if (href === path || (href !== '/' && path.startsWith(href))) {
                 link.classList.add('active');
+            } else if (path === '/' && href === '/') {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
             }
         });
     }
@@ -44,7 +48,7 @@ const F1App = (function() {
         }
 
         try {
-            const fallbackRes = await fetch('data/data.json');
+            const fallbackRes = await fetch('/data/data.json');
             if (fallbackRes.ok) {
                 cachedData = await fallbackRes.json();
                 return cachedData;

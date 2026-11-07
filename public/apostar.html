@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apostar - F1 Stars</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
@@ -13,8 +13,8 @@
     <header class="site-header">
         <div class="header-container">
             <div class="site-branding">
-                <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-                    <img src="img/logo.png" alt="F1 Stars Logo" class="site-logo">
+                <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+                    <img src="/img/logo.png" alt="F1 Stars Logo" class="site-logo">
                     <span class="site-title">f1stars<span>.click</span></span>
                 </a>
             </div>
@@ -25,17 +25,16 @@
             </button>
             <nav class="site-nav">
                 <ul>
-                    <li><a href="index.html">F1 Stars</a></li>
-                    <li><a href="apostar.html" class="active">Apostar</a></li>
-                    <li><a href="ver-apuestas.html">Ver apuestas</a></li>
-                    <li><a href="calendario.html">Calendario</a></li>
-                    <li><a href="ajustes.html">Ajustes</a></li>
+                    <li><a href="/">F1 Stars</a></li>
+                    <li><a href="/apostar/" class="active">Apostar</a></li>
+                    <li><a href="/ver-apuestas/">Ver apuestas</a></li>
+                    <li><a href="/calendario/">Calendario</a></li>
+                    <li><a href="/ajustes/">Ajustes</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <!-- Main Content -->
+    
     <main class="main-content">
         <section class="f1-card">
             <h2>🎯 Enviar Apuesta</h2>
@@ -55,7 +54,16 @@
                 <div class="form-group">
                     <label for="session">Selecciona la Sesión:</label>
                     <select id="session" name="session" required>
-                        <option value="">-- Cargando sesiones pendientes... --</option>
+                        <option value="">-- Selecciona una sesión --</option>
+<option value="180">GP Brazil - Clasificación (07/11/2026 18:00)</option>
+<option value="178">GP Brazil - Carrera (08/11/2026 17:00)</option>
+<option value="183">GP United States - Clasificación (21/11/2026 04:00)</option>
+<option value="181">GP United States - Carrera (22/11/2026 04:00)</option>
+<option value="187">GP Qatar - Clasificación (28/11/2026 18:00)</option>
+<option value="185">GP Qatar - Carrera (29/11/2026 16:00)</option>
+<option value="190">GP United Arab Emirates - Clasificación (05/12/2026 14:00)</option>
+<option value="189">GP United Arab Emirates - Carrera (06/12/2026 13:00)</option>
+
                     </select>
                 </div>
 
@@ -65,6 +73,29 @@
                         <div class="f1-driver-select-wrap">
                             <select id="driver1" name="driver1" required>
                                 <option value="">1º Posición</option>
+                                <option value="23" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ALEALB01_Alexander_Albon/alealb01.png.transform/1col/image.png" data-colour="1868DB" data-team="Williams" data-fullname="Alexander ALBON">ALBON</option>
+<option value="14" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/F/FERALO01_Fernando_Alonso/feralo01.png.transform/1col/image.png" data-colour="229971" data-team="Aston Martin" data-fullname="Fernando ALONSO">ALONSO</option>
+<option value="12" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/K/ANDANT01_Kimi_Antonelli/andant01.png.transform/1col/image.png" data-colour="00D7B6" data-team="Mercedes" data-fullname="Kimi ANTONELLI">ANTONELLI</option>
+<option value="87" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OLIBEA01_Oliver_Bearman/olibea01.png.transform/1col/image.png" data-colour="9C9FA2" data-team="Haas F1 Team" data-fullname="Oliver BEARMAN">BEARMAN</option>
+<option value="5" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GABBOR01_Gabriel_Bortoleto/gabbor01.png.transform/1col/image.png" data-colour="F50537" data-team="Audi" data-fullname="Gabriel BORTOLETO">BORTOLETO</option>
+<option value="77" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/V/VALBOT01_Valtteri_Bottas/valbot01.png.transform/1col/image.png" data-colour="909090" data-team="Cadillac" data-fullname="Valtteri BOTTAS">BOTTAS</option>
+<option value="43" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/F/FRACOL01_Franco_Colapinto/fracol01.png.transform/1col/image.png" data-colour="00A1E8" data-team="Alpine" data-fullname="Franco COLAPINTO">COLAPINTO</option>
+<option value="10" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/P/PIEGAS01_Pierre_Gasly/piegas01.png.transform/1col/image.png" data-colour="00A1E8" data-team="Alpine" data-fullname="Pierre GASLY">GASLY</option>
+<option value="6" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/I/ISAHAD01_Isack_Hadjar/isahad01.png.transform/1col/image.png" data-colour="4781D7" data-team="Red Bull Racing" data-fullname="Isack HADJAR">HADJAR</option>
+<option value="44" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png.transform/1col/image.png" data-colour="ED1131" data-team="Ferrari" data-fullname="Lewis HAMILTON">HAMILTON</option>
+<option value="27" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NICHUL01_Nico_Hulkenberg/nichul01.png.transform/1col/image.png" data-colour="F50537" data-team="Audi" data-fullname="Nico HULKENBERG">HULKENBERG</option>
+<option value="30" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LIALAW01_Liam_Lawson/lialaw01.png.transform/1col/image.png" data-colour="6C98FF" data-team="Racing Bulls" data-fullname="Liam LAWSON">LAWSON</option>
+<option value="16" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CHALEC01_Charles_Leclerc/chalec01.png.transform/1col/image.png" data-colour="ED1131" data-team="Ferrari" data-fullname="Charles LECLERC">LECLERC</option>
+<option value="41" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ARVLIN01_Arvid_Lindblad/arvlin01.png.transform/1col/image.png" data-colour="6C98FF" data-team="Racing Bulls" data-fullname="Arvid LINDBLAD">LINDBLAD</option>
+<option value="1" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png.transform/1col/image.png" data-colour="F47600" data-team="McLaren" data-fullname="Lando NORRIS">NORRIS</option>
+<option value="31" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/E/ESTOCO01_Esteban_Ocon/estoco01.png.transform/1col/image.png" data-colour="9C9FA2" data-team="Haas F1 Team" data-fullname="Esteban OCON">OCON</option>
+<option value="11" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/S/SERPER01_Sergio_Perez/serper01.png.transform/1col/image.png" data-colour="909090" data-team="Cadillac" data-fullname="Sergio PEREZ">PEREZ</option>
+<option value="81" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OSCPIA01_Oscar_Piastri/oscpia01.png.transform/1col/image.png" data-colour="F47600" data-team="McLaren" data-fullname="Oscar PIASTRI">PIASTRI</option>
+<option value="63" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GEORUS01_George_Russell/georus01.png.transform/1col/image.png" data-colour="00D7B6" data-team="Mercedes" data-fullname="George RUSSELL">RUSSELL</option>
+<option value="55" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png.transform/1col/image.png" data-colour="1868DB" data-team="Williams" data-fullname="Carlos SAINZ">SAINZ</option>
+<option value="18" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANSTR01_Lance_Stroll/lanstr01.png.transform/1col/image.png" data-colour="229971" data-team="Aston Martin" data-fullname="Lance STROLL">STROLL</option>
+<option value="3" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/1col/image.png" data-colour="4781D7" data-team="Red Bull Racing" data-fullname="Max VERSTAPPEN">VERSTAPPEN</option>
+
                             </select>
                             <div class="f1-driver-preview" id="preview-driver1"></div>
                         </div>
@@ -72,6 +103,29 @@
                         <div class="f1-driver-select-wrap">
                             <select id="driver2" name="driver2" required>
                                 <option value="">2º Posición</option>
+                                <option value="23" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ALEALB01_Alexander_Albon/alealb01.png.transform/1col/image.png" data-colour="1868DB" data-team="Williams" data-fullname="Alexander ALBON">ALBON</option>
+<option value="14" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/F/FERALO01_Fernando_Alonso/feralo01.png.transform/1col/image.png" data-colour="229971" data-team="Aston Martin" data-fullname="Fernando ALONSO">ALONSO</option>
+<option value="12" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/K/ANDANT01_Kimi_Antonelli/andant01.png.transform/1col/image.png" data-colour="00D7B6" data-team="Mercedes" data-fullname="Kimi ANTONELLI">ANTONELLI</option>
+<option value="87" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OLIBEA01_Oliver_Bearman/olibea01.png.transform/1col/image.png" data-colour="9C9FA2" data-team="Haas F1 Team" data-fullname="Oliver BEARMAN">BEARMAN</option>
+<option value="5" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GABBOR01_Gabriel_Bortoleto/gabbor01.png.transform/1col/image.png" data-colour="F50537" data-team="Audi" data-fullname="Gabriel BORTOLETO">BORTOLETO</option>
+<option value="77" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/V/VALBOT01_Valtteri_Bottas/valbot01.png.transform/1col/image.png" data-colour="909090" data-team="Cadillac" data-fullname="Valtteri BOTTAS">BOTTAS</option>
+<option value="43" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/F/FRACOL01_Franco_Colapinto/fracol01.png.transform/1col/image.png" data-colour="00A1E8" data-team="Alpine" data-fullname="Franco COLAPINTO">COLAPINTO</option>
+<option value="10" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/P/PIEGAS01_Pierre_Gasly/piegas01.png.transform/1col/image.png" data-colour="00A1E8" data-team="Alpine" data-fullname="Pierre GASLY">GASLY</option>
+<option value="6" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/I/ISAHAD01_Isack_Hadjar/isahad01.png.transform/1col/image.png" data-colour="4781D7" data-team="Red Bull Racing" data-fullname="Isack HADJAR">HADJAR</option>
+<option value="44" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png.transform/1col/image.png" data-colour="ED1131" data-team="Ferrari" data-fullname="Lewis HAMILTON">HAMILTON</option>
+<option value="27" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NICHUL01_Nico_Hulkenberg/nichul01.png.transform/1col/image.png" data-colour="F50537" data-team="Audi" data-fullname="Nico HULKENBERG">HULKENBERG</option>
+<option value="30" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LIALAW01_Liam_Lawson/lialaw01.png.transform/1col/image.png" data-colour="6C98FF" data-team="Racing Bulls" data-fullname="Liam LAWSON">LAWSON</option>
+<option value="16" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CHALEC01_Charles_Leclerc/chalec01.png.transform/1col/image.png" data-colour="ED1131" data-team="Ferrari" data-fullname="Charles LECLERC">LECLERC</option>
+<option value="41" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ARVLIN01_Arvid_Lindblad/arvlin01.png.transform/1col/image.png" data-colour="6C98FF" data-team="Racing Bulls" data-fullname="Arvid LINDBLAD">LINDBLAD</option>
+<option value="1" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png.transform/1col/image.png" data-colour="F47600" data-team="McLaren" data-fullname="Lando NORRIS">NORRIS</option>
+<option value="31" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/E/ESTOCO01_Esteban_Ocon/estoco01.png.transform/1col/image.png" data-colour="9C9FA2" data-team="Haas F1 Team" data-fullname="Esteban OCON">OCON</option>
+<option value="11" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/S/SERPER01_Sergio_Perez/serper01.png.transform/1col/image.png" data-colour="909090" data-team="Cadillac" data-fullname="Sergio PEREZ">PEREZ</option>
+<option value="81" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OSCPIA01_Oscar_Piastri/oscpia01.png.transform/1col/image.png" data-colour="F47600" data-team="McLaren" data-fullname="Oscar PIASTRI">PIASTRI</option>
+<option value="63" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GEORUS01_George_Russell/georus01.png.transform/1col/image.png" data-colour="00D7B6" data-team="Mercedes" data-fullname="George RUSSELL">RUSSELL</option>
+<option value="55" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png.transform/1col/image.png" data-colour="1868DB" data-team="Williams" data-fullname="Carlos SAINZ">SAINZ</option>
+<option value="18" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANSTR01_Lance_Stroll/lanstr01.png.transform/1col/image.png" data-colour="229971" data-team="Aston Martin" data-fullname="Lance STROLL">STROLL</option>
+<option value="3" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/1col/image.png" data-colour="4781D7" data-team="Red Bull Racing" data-fullname="Max VERSTAPPEN">VERSTAPPEN</option>
+
                             </select>
                             <div class="f1-driver-preview" id="preview-driver2"></div>
                         </div>
@@ -79,6 +133,29 @@
                         <div class="f1-driver-select-wrap">
                             <select id="driver3" name="driver3" required>
                                 <option value="">3º Posición</option>
+                                <option value="23" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ALEALB01_Alexander_Albon/alealb01.png.transform/1col/image.png" data-colour="1868DB" data-team="Williams" data-fullname="Alexander ALBON">ALBON</option>
+<option value="14" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/F/FERALO01_Fernando_Alonso/feralo01.png.transform/1col/image.png" data-colour="229971" data-team="Aston Martin" data-fullname="Fernando ALONSO">ALONSO</option>
+<option value="12" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/K/ANDANT01_Kimi_Antonelli/andant01.png.transform/1col/image.png" data-colour="00D7B6" data-team="Mercedes" data-fullname="Kimi ANTONELLI">ANTONELLI</option>
+<option value="87" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OLIBEA01_Oliver_Bearman/olibea01.png.transform/1col/image.png" data-colour="9C9FA2" data-team="Haas F1 Team" data-fullname="Oliver BEARMAN">BEARMAN</option>
+<option value="5" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GABBOR01_Gabriel_Bortoleto/gabbor01.png.transform/1col/image.png" data-colour="F50537" data-team="Audi" data-fullname="Gabriel BORTOLETO">BORTOLETO</option>
+<option value="77" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/V/VALBOT01_Valtteri_Bottas/valbot01.png.transform/1col/image.png" data-colour="909090" data-team="Cadillac" data-fullname="Valtteri BOTTAS">BOTTAS</option>
+<option value="43" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/F/FRACOL01_Franco_Colapinto/fracol01.png.transform/1col/image.png" data-colour="00A1E8" data-team="Alpine" data-fullname="Franco COLAPINTO">COLAPINTO</option>
+<option value="10" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/P/PIEGAS01_Pierre_Gasly/piegas01.png.transform/1col/image.png" data-colour="00A1E8" data-team="Alpine" data-fullname="Pierre GASLY">GASLY</option>
+<option value="6" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/I/ISAHAD01_Isack_Hadjar/isahad01.png.transform/1col/image.png" data-colour="4781D7" data-team="Red Bull Racing" data-fullname="Isack HADJAR">HADJAR</option>
+<option value="44" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png.transform/1col/image.png" data-colour="ED1131" data-team="Ferrari" data-fullname="Lewis HAMILTON">HAMILTON</option>
+<option value="27" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NICHUL01_Nico_Hulkenberg/nichul01.png.transform/1col/image.png" data-colour="F50537" data-team="Audi" data-fullname="Nico HULKENBERG">HULKENBERG</option>
+<option value="30" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LIALAW01_Liam_Lawson/lialaw01.png.transform/1col/image.png" data-colour="6C98FF" data-team="Racing Bulls" data-fullname="Liam LAWSON">LAWSON</option>
+<option value="16" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CHALEC01_Charles_Leclerc/chalec01.png.transform/1col/image.png" data-colour="ED1131" data-team="Ferrari" data-fullname="Charles LECLERC">LECLERC</option>
+<option value="41" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ARVLIN01_Arvid_Lindblad/arvlin01.png.transform/1col/image.png" data-colour="6C98FF" data-team="Racing Bulls" data-fullname="Arvid LINDBLAD">LINDBLAD</option>
+<option value="1" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png.transform/1col/image.png" data-colour="F47600" data-team="McLaren" data-fullname="Lando NORRIS">NORRIS</option>
+<option value="31" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/E/ESTOCO01_Esteban_Ocon/estoco01.png.transform/1col/image.png" data-colour="9C9FA2" data-team="Haas F1 Team" data-fullname="Esteban OCON">OCON</option>
+<option value="11" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/S/SERPER01_Sergio_Perez/serper01.png.transform/1col/image.png" data-colour="909090" data-team="Cadillac" data-fullname="Sergio PEREZ">PEREZ</option>
+<option value="81" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OSCPIA01_Oscar_Piastri/oscpia01.png.transform/1col/image.png" data-colour="F47600" data-team="McLaren" data-fullname="Oscar PIASTRI">PIASTRI</option>
+<option value="63" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GEORUS01_George_Russell/georus01.png.transform/1col/image.png" data-colour="00D7B6" data-team="Mercedes" data-fullname="George RUSSELL">RUSSELL</option>
+<option value="55" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png.transform/1col/image.png" data-colour="1868DB" data-team="Williams" data-fullname="Carlos SAINZ">SAINZ</option>
+<option value="18" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANSTR01_Lance_Stroll/lanstr01.png.transform/1col/image.png" data-colour="229971" data-team="Aston Martin" data-fullname="Lance STROLL">STROLL</option>
+<option value="3" data-headshot="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/1col/image.png" data-colour="4781D7" data-team="Red Bull Racing" data-fullname="Max VERSTAPPEN">VERSTAPPEN</option>
+
                             </select>
                             <div class="f1-driver-preview" id="preview-driver3"></div>
                         </div>
@@ -100,7 +177,7 @@
     <footer class="site-footer">
         <p>Todos los derechos &copy; 2026 f1stars.click | Porra F1 100% gratuita y sin cuotas</p>
     </footer>
+    <script src="/js/app.js"></script>
 
-    <script src="js/app.js"></script>
 </body>
 </html>

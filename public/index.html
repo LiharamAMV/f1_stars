@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1 Stars - Clasificación y Porra</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Chart.js CDN -->
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 </head>
 <body>
@@ -15,8 +14,8 @@
     <header class="site-header">
         <div class="header-container">
             <div class="site-branding">
-                <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-                    <img src="img/logo.png" alt="F1 Stars Logo" class="site-logo">
+                <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+                    <img src="/img/logo.png" alt="F1 Stars Logo" class="site-logo">
                     <span class="site-title">f1stars<span>.click</span></span>
                 </a>
             </div>
@@ -27,24 +26,21 @@
             </button>
             <nav class="site-nav">
                 <ul>
-                    <li><a href="index.html" class="active">F1 Stars</a></li>
-                    <li><a href="apostar.html">Apostar</a></li>
-                    <li><a href="ver-apuestas.html">Ver apuestas</a></li>
-                    <li><a href="calendario.html">Calendario</a></li>
-                    <li><a href="ajustes.html">Ajustes</a></li>
+                    <li><a href="/" class="active">F1 Stars</a></li>
+                    <li><a href="/apostar/">Apostar</a></li>
+                    <li><a href="/ver-apuestas/">Ver apuestas</a></li>
+                    <li><a href="/calendario/">Calendario</a></li>
+                    <li><a href="/ajustes/">Ajustes</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <!-- Main Content -->
+    
     <main class="main-content">
-        <!-- Hero Banner -->
         <div class="banner-wrap">
-            <img src="img/banner.png" alt="F1 Stars Banner">
+            <img src="/img/banner.png" alt="F1 Stars Banner">
         </div>
 
-        <!-- Standings Section -->
         <section class="f1-card">
             <h2>🏆 Clasificación General</h2>
             <div class="f1-table-scroll">
@@ -58,13 +54,39 @@
                         </tr>
                     </thead>
                     <tbody id="f1-standings-body">
-                        <!-- Populated dynamically via JS -->
-                        <tr><td colspan="4" style="text-align:center;padding:24px;">Cargando clasificación...</td></tr>
+                        
+        <tr>
+            <td class="position">👑</td>
+            <td class="nick"><strong>Andrés</strong></td>
+            <td class="points"><strong>253</strong></td>
+            <td class="bets">50</td>
+        </tr>
+    
+        <tr>
+            <td class="position">👏</td>
+            <td class="nick"><strong>Iván</strong></td>
+            <td class="points"><strong>238</strong></td>
+            <td class="bets">50</td>
+        </tr>
+    
+        <tr>
+            <td class="position">🤡</td>
+            <td class="nick"><strong>José Carlos</strong></td>
+            <td class="points"><strong>235</strong></td>
+            <td class="bets">50</td>
+        </tr>
+    
+        <tr>
+            <td class="position">💩</td>
+            <td class="nick"><strong>Víctor</strong></td>
+            <td class="points"><strong>224</strong></td>
+            <td class="bets">50</td>
+        </tr>
+    
                     </tbody>
                 </table>
             </div>
 
-            <!-- Sync Results button -->
             <div style="margin-top: 24px;">
                 <button id="f1-load-results-btn" class="f1-btn">
                     📊 Cargar Resultados
@@ -76,12 +98,11 @@
             </div>
         </section>
 
-        <!-- Points Evolution Chart Section -->
         <section class="f1-card">
             <h2>📈 Evolución de Puntos</h2>
             <div class="f1-chart-box">
-                <div id="f1-chart-status" class="f1-chart-status">⏳ Cargando datos del gráfico...</div>
-                <div id="f1-chart-canvas-wrap" style="display:none;position:relative;height:380px;">
+                <div id="f1-chart-status" class="f1-chart-status" style="display:none;"></div>
+                <div id="f1-chart-canvas-wrap" style="position:relative;height:380px;">
                     <canvas id="f1PointsChart"></canvas>
                 </div>
             </div>
@@ -92,7 +113,7 @@
     <footer class="site-footer">
         <p>Todos los derechos &copy; 2026 f1stars.click | Porra F1 100% gratuita y sin cuotas</p>
     </footer>
+    <script src="/js/app.js"></script>
 
-    <script src="js/app.js"></script>
 </body>
 </html>
