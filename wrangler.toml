@@ -1,8 +1,0 @@
-name = "f1-stars"
-compatibility_date = "2026-11-01"
-pages_build_output_dir = "public"
-
-[[d1_databases]]
-binding = "DB"
-database_name = "f1_stars_db"
-database_id = "f1_stars_db"
